@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+:root {
+  --success-color: #228340;
+  --error-color: #df2121;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: url("images/bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 100vh;
+  opacity: 80%;
+}
+.container {
+  background-color: rgb(255 248 248);
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  width: 400px;
+
+  height: auto;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+.form-control {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.form-control label {
+  color: #836373;
+  display: block;
+  margin-bottom: 5px;
+}
+.form-control input {
+  display: block;
+  width: 100%;
+  border: 2px solid #836373;
+  padding: 5px;
+  border-radius: 5px;
+}
+.form-control input:focus {
+  outline: 0;
+  border-color: #836373;
+}
+.form-control.success input {
+  border-color: var(--success-color);
+}
+.form-control.error input {
+  border-color: var(--error-color);
+}
+.form-control small {
+  color: var(--error-color);
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  background-color: #836373;
+  border-radius: 5px;
+  border: 2px solid #836373;
+  padding: 8px;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+.form button:hover {
+  transform: scale(1.1);
+}
